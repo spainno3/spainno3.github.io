@@ -11,5 +11,5 @@ tags: 	    data
 - [JSON][json]
 - [SQL][sql]
 
-[json]:   https://github.com/spainno3/spainno3.github.io/tree/master/data/local.json
-[sql]:   https://github.com/spainno3/spainno3.github.io/tree/master/data/local.sql
+[json]:   https://raw.githubusercontent.com/spainno3/spainno3.github.io/master/data/local.json
+[sql]:   https://raw.githubusercontent.com/spainno3/spainno3.github.io/master/data/local.sql
