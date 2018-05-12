@@ -88,7 +88,7 @@ defaults:
       author:         Spainno3
 
 # Site customization
-#google_analytics_key: UA-46600             # Google Analytics key, leave blank to ignore
+google_analytics_key: UA-83777920-2             # Google Analytics key, leave blank to ignore
 disqus_shortname:     spainno3                    # Disqus shortname for comments
 rss_feed:             /feed.xml                 # link to view rss feed (/atom.xml) in sidebar
 
