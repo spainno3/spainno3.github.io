@@ -1,7 +1,7 @@
 ---
 title:    JVB Seminar security
 layout:   post
-category: blog
+category: tutorial-tips
 tags:     ~
 ---
 
