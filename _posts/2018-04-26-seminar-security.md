@@ -12,7 +12,7 @@ tags:     [kill]
 ```
 ## Installation
 
-1. git clone https://github.com/spainno3/CDN.git
+1. git clone https://github.com/spainno3/seminar_security.git
 
 2. Edit config db in /libs/config
 
@@ -20,7 +20,7 @@ tags:     [kill]
 
 4. Enjoy
 
-## Development
-sh
+## Development 
+Spainno3
 Email: spainno3@gmail.com
 ```
