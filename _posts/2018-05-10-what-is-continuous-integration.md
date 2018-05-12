@@ -2,7 +2,7 @@
 title:    Tích hợp liên tục (CI) là cái gì?
 layout:   post
 category: tutorial-tips
-tags:     [skill, dev-ops]
+tags:     skill
 feature:  /assets/img/ci.jpg
 ---
 
@@ -75,6 +75,6 @@ Khi đó Source Control Server sẽ thông báo với CI Server là có bản so
 [ibm]:      http://www.ibm.com/developerworks/vn/library/rational/201301/continuous-integration-agile-development/
 [slide-01]: https://speakerdeck.com/rkh/travis-ci
 [slide-02]: http://www.slideshare.net/mostofreddy/travisci-continuos-integration-in-the-cloud-for-php
-[slide-03]: /slides/2016-07-08-continuous-integration.html
+[slide-03]: /slides/2018-05-10-continuous-integration.html
 [source]:   https://github.com/oanhnn/slim-skeleton
 [ci-services]: https://github.com/ligurio/Continuous-Integration-services/blob/master/continuous-integration-services-list.md

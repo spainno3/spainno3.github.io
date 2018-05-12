@@ -2,7 +2,7 @@
 title:    JVB Seminar security
 layout:   post
 category: tutorial-tips
-tags:     ~
+tags:     skill
 ---
 
 <p>This repository contains the source code of demo security JVB (PHP)</p>
