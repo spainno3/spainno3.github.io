@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | append: ' &middot; ' | append: site.title }}{% else %}{{ site.title | append: ' &middot; ' | append: site.subtitle }}{% endif %}</title>
+  <meta name="author" content="{% if page.author %}{{ page.author.name }}{% else %}{{ site.author.name }}{% endif %}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  {% include graph-metas.html %}
+  <!--[if lt IE 9]><script src="{{ '/assets/js/html5.js' | relative_url }}" type="text/javascript"></script><![endif]-->
+
+  <link rel="stylesheet" href="{{ '/slides/reveal.js-3.3.0/css/reveal.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/slides/reveal.js-3.3.0/css/theme/black.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/slides/reveal.js-3.3.0/lib/css/zenburn.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ '/slides/reveal.js-3.3.0/css/print/pdf.css' | relative_url }}" media="print">
+  <style type="text/css">
+    .logo {position: absolute; left: 20px; top: 20px; display: block; border: none!important;
+      background: transparent!important; box-shadow: none!important}
+    .logo > img{width: 64px}
+    .reveal pre {box-shadow: none}
+    @media print {
+      .logo {display: none}
+    }
+  </style>
+  <!-- Printing and PDF exports -->
+  <!--script>
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = "{{ '/slides/reveal.js-3.3.0/css/print/' | relative_url }}" + (window.location.search.match(/print-pdf/gi) ? "pdf.css" : "paper.css");
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script -->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      {{ content }}
+      {% comment %}
+      <section id="manual">
+        <ul style="text-align: left; list-style: none">
+          <li>Press <span class="fragment grow">ESC</span> key to enter the slide overview</li>
+          <li>Press <span class="fragment grow">S</span> key to show slide notes</li>
+          <li>Using <span class="fragment grow">arrow</span> & <span class="fragment grow">SPACE</span> key to navigate slides</li>
+          <li>Press <span class="fragment grow">B</span> or <span class="fragment grow">.</span> key to pause the presentation</li>
+        </ul>
+      </section>
+      {% endcomment %}
+    </div>
+    <a href="{{ site.baseurl }}" class="logo">
+      {% if site.data.author.image %}
+      <img src="{{ site.data.author.image }}">
+      {% else %}
+      <img src="{{ '/assets/img/apple-touch-icon-180x180.png'  | relative_url }}">
+      {% endif %}
+    </a>
+  </div>
+
+  <script src="{{ '/slides/reveal.js-3.3.0/lib/js/head.min.js' | relative_url }}"></script>
+  <script src="{{ '/slides/reveal.js-3.3.0/js/reveal.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/jquery-1.11.2.min.js' | relative_url }}"></script>
+  <script>
+    $(document).ready(function () {
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        slideNumber: 'c/t',
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: "{{ '/slides/reveal.js-3.3.0/lib/js/classList.js' | relative_url }}",
+            condition: function () {
+              return !document.body.classList;
+            }
+        }, {
+          src: "{{ '/slides/reveal.js-3.3.0/plugin/markdown/marked.js' | relative_url }}",
+          condition: function () {
+            return !!document.querySelector('[data-markdown]');
+          }
+        }, {
+          src: "{{ '/slides/reveal.js-3.3.0/plugin/markdown/markdown.js' | relative_url }}",
+          condition: function () {
+            return !!document.querySelector('[data-markdown]');
+          }
+        }, {
+          src: "{{ '/slides/reveal.js-3.3.0/plugin/highlight/highlight.js' | relative_url }}",
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }, {
+          src: "{{ '/slides/reveal.js-3.3.0/plugin/zoom-js/zoom.js' | relative_url }}",
+          async: true
+        }, {
+          src: "{{ '/slides/reveal.js-3.3.0/plugin/notes/notes.js' | relative_url }}",
+          async: true
+        }]
+      });
+    });
+  </script>
+</body>
+</html>

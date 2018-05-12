@@ -1,0 +1,33 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | append: ' &middot; ' | append: site.title }}{% else %}{{ site.title | append: ' &middot; ' | append: site.subtitle }}{% endif %}</title>
+  <meta name="author" content="{% if page.author %}{{ page.author.name }}{% else %}{{ site.author.name }}{% endif %}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  {% include graph-metas.html %}
+  <!--[if lt IE 9]><script src="{{ '/assets/js/html5.js' | relative_url }}" type="text/javascript"></script><![endif]-->
+
+  <meta name="theme-color" content="#3498db">
+
+  <link rel="stylesheet" href="{{ '/assets/css/all.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.rss_feed | absolute_url }}">
+
+  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon-57x57.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ '/assets/img/apple-touch-icon-57x57.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ '/assets/img/apple-touch-icon-72x72.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ '/assets/img/apple-touch-icon-76x76.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ '/assets/img/apple-touch-icon-114x114.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ '/assets/img/apple-touch-icon-120x120.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ '/assets/img/apple-touch-icon-144x144.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ '/assets/img/apple-touch-icon-152x152.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon-180x180.png' | relative_url }}">
+
+  <link rel="icon" sizes="192x192" href="{{ '/assets/img/apple-touch-icon-180x180.png' | relative_url }}">
+  {% include analytics.html %}
+</head>

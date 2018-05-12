@@ -1,0 +1,97 @@
+# General Jekyll Config
+title:                Spainno3 - Vũ Minh Tuấn
+subtitle:             Sharing anything I know and I think
+description:          >
+    I am a web developer and an open-source contributor.
+
+baseurl:              ""                                      # the subpath of your site, e.g. /blog
+url:                  "https://spainno3.github.io"              # the base hostname & protocol for your site
+timezone:             Asia/Ho_Chi_Minh
+encoding:             utf-8
+locale:               vi_VN
+
+# Build settings
+permalink:            /:year-:month-:day/:title.html
+
+#paginate:             5
+#paginate_path:        "/page:num/"
+
+safe:                 false
+lsi:                  false
+source:               .
+destination:          _site
+layouts_dir:          _layouts
+data_dir:             _data
+include:              [.htaccess]
+exclude:
+  - LICENSE.md
+  - CNAME
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .editorconfig
+  - .git
+  - .gitignore
+  - .gitattribute
+  - _scripts
+
+keep_files:           []
+
+show_drafts:          false
+future:               true
+unpublished:          false
+markdown:             kramdown
+markdown_ext:         "md"
+excerpt_separator:    "<!--more-->"
+highlighter:          rouge
+
+kramdown:
+  input:              GFM
+  hard_wrap:          false
+  auto_ids:           true
+  footnote_nr:        1
+  entity_output:      as_char
+  toc_levels:         1..6
+  smart_quotes:       lsquo,rsquo,ldquo,rdquo
+  enable_coderay:     false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      css_class:      highlight
+      line_numbers:   true
+      start_line:     1
+      wrap:           true
+
+#whitelist:            []
+#gems:
+#  - jemoji
+#  - jekyll-mentions
+#  - jekyll-redirect-from
+#  - jekyll-sitemap
+#  - jekyll-feed
+#  - jekyll-gist
+#  - jekyll-paginate
+#  - jekyll-seo-tag
+
+sass:
+  sass_dir:           _sass
+  style:              :compressed
+
+# Default vars
+defaults:
+  -
+    scope:
+      path:           ""
+      type:           posts
+    values:
+      layout:         post
+      author:         Spainno3
+
+# Site customization
+#google_analytics_key: UA-46600             # Google Analytics key, leave blank to ignore
+disqus_shortname:     spainno3                    # Disqus shortname for comments
+rss_feed:             /feed.xml                 # link to view rss feed (/atom.xml) in sidebar
+
+# Color for top bar, links, etc
+colors:
+  highlight:         '#3498db'
