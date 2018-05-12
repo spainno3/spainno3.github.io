@@ -2,7 +2,7 @@
 title:                Spainno3 - Vũ Minh Tuấn
 subtitle:             Sharing anything I know and I think
 description:          >
-    I am a web developer and an open-source contributor.
+    I am a web developer.
 
 baseurl:              ""                                      # the subpath of your site, e.g. /blog
 url:                  "https://spainno3.github.io"              # the base hostname & protocol for your site

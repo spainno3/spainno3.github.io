@@ -2,7 +2,7 @@
 title:    Tích hợp liên tục (CI) là cái gì?
 layout:   post
 category: tutorial-tips
-tags:     skill
+tags:     [kill, dev-ops]
 feature:  /assets/img/ci.jpg
 ---
 
