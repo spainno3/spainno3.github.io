@@ -7,6 +7,8 @@ tags:     [kill]
 
 <p>This repository contains the source code of demo security JVB (PHP)</p>
 
+<!--more-->
+
 ![](http://jvb-corp.com/img/logo.png)
 
 ```
@@ -20,7 +22,7 @@ tags:     [kill]
 
 4. Enjoy
 
-## Development 
+## Development
 Spainno3
 Email: spainno3@gmail.com
 ```

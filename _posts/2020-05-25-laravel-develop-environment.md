@@ -8,6 +8,8 @@ feature: /assets/img/laravel-environment.png
 
 ## Mục đích của tài liệu
 - Sử dụng Docker containers để thiết lập môi trường lâp trình cho ứng dụng Laravel 1 cách nhanh chóng.
+
+<!--more-->
 ## Chuẩn bị kiến thức
 > Để tập trung vào mục đích chính của tài liệu này nên mình sẽ không đi sâu vào các khái niệm hay kiến thức liên quan, nếu các bạn thiếu kiến thức nào hãy chủ động tìm hiểu bằng các nguồn có sẵn trên mạng. Ở đây mình chỉ liệt kê ra các kiến thức cần phải có để có thể bắt đầu công việc 1 cách trôi chảy nhất.
 - Biết [docker](https://www.docker.com/) và [docker-compose](https://docs.docker.com/compose/) là gì
@@ -17,10 +19,11 @@ feature: /assets/img/laravel-environment.png
 ### Sử dụng image có sẵn
 > Đây là cách nhanh nhất và cũng đơn giản nhất để setup được các môi trường cơ bản cho 1 ứng dụng web.
 Sử dụng các image có sẵn do FramgiaDockerTeam đã build. File `docker-compose.yml` sẽ như sau:
+
 ```
 version: '3'
 
-### Change the `project` with your own project name ###
+# Change the `project` with your own project name
 services:
     application:
         container_name: project_application
@@ -118,8 +121,10 @@ services:
             - "6379"
         links:
             - data
+
 ```
-Các container sau sẽ được chạy mặc định sau khi chạy lệnh `docker-compose up`:
+
+# Các container sau sẽ được chạy mặc định sau khi chạy lệnh `docker-compose up`:
 > Các bạn cũng có thể tùy biến (thêm hoặc xóa) các `services` cho phù hợp với yêu cầu môi trường phát triển của từng dự án.
 - nginx
 - application (for storing project source code)

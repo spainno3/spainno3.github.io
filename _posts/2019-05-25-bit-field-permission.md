@@ -10,6 +10,8 @@ feature: /assets/img/bit-field.png
 
 Đối với 1 website hay software có thành viên ( users ) thì việc phân chia thành từng nhóm ( groups ) để có thể dễ dàng phân quyền với hàng tá chức năng của website, software là một vấn đề thường gặp & khá nan giải. Kĩ thuật BitField được sử dụng khá phổ biến & linh hoạt. Qua bài viết này, bạn sẽ thấy được sự 'ảo diệu' của hệ nhị phân ( 0 và 1 )...
 
+<!--more-->
+
 ### Phân tích
 
 #### Tại sao lại có nhị phân trong này ???

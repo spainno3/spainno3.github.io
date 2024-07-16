@@ -10,6 +10,8 @@ feature: /assets/img/laravel-environment.png
 
 A simple bash shell script to update Laravel files and folders permission and owner
 
+<!--more-->
+
 ## IMPORTANT: Set LARAVEL_OWNER, LARAVEL_WS_GROUP and LARAVEL_ROOT before running
 
 ## TO RUN (after logging in to your server using SSH):

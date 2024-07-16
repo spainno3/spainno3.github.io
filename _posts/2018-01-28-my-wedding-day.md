@@ -5,6 +5,7 @@ category: blog
 tags:     ~
 ---
 
+<!--more-->
 <p>
   <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/iPr1eIwP4UI" frameborder="0" allowfullscreen></iframe>

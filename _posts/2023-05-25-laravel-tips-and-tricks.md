@@ -7,6 +7,8 @@ feature: /assets/img/laravel-environment.png
 ---
 
 # Laravel Tips and Tricks
+
+<!--more-->
 ## Table of contents
 - [Database Models and Eloquent](https://github.com/hussainHanif/Laravel-Tips-and-Tricks/blob/main/db-models-and-eloquent.md) (94 tips)
 - [Models Relationship](https://github.com/hussainHanif/Laravel-Tips-and-Tricks/blob/main/models-relations.md) (35 tips)
