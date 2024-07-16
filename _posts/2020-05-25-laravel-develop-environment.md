@@ -19,11 +19,12 @@ feature: /assets/img/laravel-environment.png
 ### Sử dụng image có sẵn
 > Đây là cách nhanh nhất và cũng đơn giản nhất để setup được các môi trường cơ bản cho 1 ứng dụng web.
 Sử dụng các image có sẵn do FramgiaDockerTeam đã build. File `docker-compose.yml` sẽ như sau:
+(Change the `project` with your own project name)
 
 ```
+
 version: '3'
 
-# Change the `project` with your own project name
 services:
     application:
         container_name: project_application
@@ -300,6 +301,7 @@ Notes:
 > Cuối cùng ta có được file docker-compose.yml như sau:
 
 ```
+
 version: '3'
 
 services:
